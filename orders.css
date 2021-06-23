@@ -1,0 +1,26 @@
+#orders{
+    display: flex;
+    flex-direction:column-reverse;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.order-item{
+    /* background: #E1EBF7; */
+    background: linear-gradient(to bottom right, #E1EBF7, #a0aec0);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    line-height: 2rem;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 5px #E1EBF7;
+}
+
+.label{
+    font-weight: bolder;
+}
+
+.order-details{
+    margin-left: 2rem;
+}

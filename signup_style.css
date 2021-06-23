@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  'Raleway', sans-serif;
+    font-size: 0.9rem;
+}
+
+#login-page{
+    margin: 2rem auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    max-width: 70rem;
+    min-height: 100px;
+    box-shadow: 2px 2px 10px rgb(151, 151, 151);
+}
+
+#form-section{
+    width: 50%;
+    line-height: 1.5rem;
+    padding: 3rem;
+    color: rgb(56, 55, 55);
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#form-section h1, #form-section p{
+    text-align: center;
+}
+
+#form div{
+    margin-top: 1rem;
+}
+
+#form input{
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.5rem;
+    width: 100%;
+}
+
+#form input[type=submit]{
+    background-color: #ff6701;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#form label{
+    font-weight: bold;
+}
+
+#sign-in{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#sign-in a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+#sign-in span{
+    background-color: #ff6701;
+    padding: 0.6rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+#sign-in img{
+    position: relative;
+    top: 13px;
+    padding: 0.25rem;
+    border: 1px solid #ff6701;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#sign-up{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#sign-up a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#hr-rule{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+.one{
+    flex: 2;
+    height: 0.5px;
+    border: none;
+    background-color: rgb(161, 158, 158);
+}
+
+.two{
+    flex: 2;
+    height: 0.5px;
+    border: none;
+    background-color: rgb(161, 158, 158);
+}
+
+.mid-text{
+    margin: 0 0.5rem;
+}
+
+
+#carousel-section{
+    width: 50%;
+    background: linear-gradient(rgba(255, 103, 1, 0.473), rgb(255, 102, 0));
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    line-height: 2rem;
+}
+
+#carousel-section h1{
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#carousel-section p{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#carousel-section img{
+    width: 50%;
+    position: relative;
+    top: -100px;
+    animation: animate1 1s forwards ease-in;
+}
+
+@keyframes animate1 {
+
+    to{
+        top: 0px
+    }
+}
+
+.carousel-text{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px){
+    #login-page{
+        flex-direction: column-reverse;
+        margin: 0;
+        border-radius: 0px;
+
+    }
+
+    #form-section{
+        width: 100%;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+
+    #carousel-section{
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 375px){
+   #form-section{
+       padding: 1rem;
+   }
+}
+
+

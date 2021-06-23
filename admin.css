@@ -1,0 +1,225 @@
+/* #365EAC */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* #1d1e20 #FC8019 #05A357 #fff*/
+/* black    orange  green   white*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+/* html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    position: relative;
+} */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.active{
+    color:#FC8019 !important;
+}
+
+.admin-greeting{
+    text-align:right;
+    margin-top: 1rem;
+    font-weight: lighter;
+    letter-spacing: 0.3rem;
+}
+
+/* nav section */
+#header-section{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom right,#02163b,#244c9b);
+    color: #fff;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: sticky;
+    z-index: 1;
+    box-shadow: 0px 0px 30px #1d1e20;
+}
+
+#logo{
+    margin: 1rem;
+    letter-spacing: 0.3rem;
+}
+
+#logo span{
+    color: #FC8019;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    list-style: none;
+}
+
+#nav a{
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+#nav a:hover{
+    color: #FC8019;
+}
+
+#nav span{
+    font-weight: lighter;
+    padding-left: 0.2rem;
+}
+
+/* dashboard section */
+#dashboard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+}
+
+.dashboard-item{
+    background: linear-gradient(to bottom right,#7192d1,#123b8d);
+    padding: 2rem;
+    color: #fff;
+    height: 10rem;
+    box-shadow: 2px 5px 15px #5072b6;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.dashboard-item p{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.dashboard-item h2{
+    /* font-size: 1rem; */
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+}
+
+
+
+/* ---------------- */
+/* admin_orders.php */
+/* ---------------- */
+
+#table {
+    /* margin-top: 4rem; */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#table tr:hover {
+    background-color: #ddd;
+}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+#table-head{
+    left: 0;
+    right: 0;
+    top: 4rem;
+    position: sticky;
+}
+
+
+
+/* ------------- */
+/* admin_addfood.php */
+/* ---------------- */
+
+.form-section{
+    width: 20rem;
+    background-color: #244c9b;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 4rem;
+    padding: 1rem;
+    color: #fff;
+    line-height: 1.5rem;
+    border-radius: 5px;
+}
+
+form label{
+    display: block;
+}
+
+form input{
+    width: 100%;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+form select{
+    padding: 0.3rem;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+form input[type=file]{
+    margin-bottom: 1rem;
+}
+
+.form-input{
+    margin-bottom: 1rem;
+}
+
+/* ------------- */
+/* admin_updatefood.php */
+/* ------------- */
+#table img{
+    width: 7rem;
+    height: 5rem;
+}
+
+
+
+@media only screen and (max-width:420px){
+
+    /* nav section */
+    #header-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav{
+        margin: 0;
+    }
+
+    #logo{
+        margin: 0.5rem;
+        text-align: center;
+    }
+}

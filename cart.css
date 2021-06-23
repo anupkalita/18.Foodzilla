@@ -1,0 +1,125 @@
+#cart{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    line-height: 2rem;
+}
+
+#cart-section{
+    flex: 3;
+}
+
+#order-summary-div{
+    flex: 2;
+    padding: 1rem;
+
+}
+
+#order-summary{
+    width: 20rem;
+    background: linear-gradient(to bottom right, #27ca7b, #094e2c);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: fixed;
+    margin-left: 4rem;
+    color: #fff;
+}
+
+#checkout-btn{
+    background-color: #1d1e20;
+    color: #fff;
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#checkout-btn:hover{
+   color: #FC8019;
+}
+
+hr{
+    border: none;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.cart-item{
+    display: flex;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.cart-food-img{
+    max-width: 15rem;
+    height: 10rem;
+}
+
+.cart-food-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.cart-food-details{
+    margin-left: 4rem;
+}
+
+.cart-food-details h2{
+    letter-spacing: 0.2rem;
+    font-weight: lighter;
+}
+
+#cart-remove-btn{
+    background-color: #FC8019;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cart-remove-btn:hover{
+    background-color: #1d1e20;
+    color: #fff;
+}
+
+@media only screen and (max-width: 550px){
+    #cart{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart-item{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 1rem auto;
+    }
+    
+    #cart-section{
+        flex: 1;
+    }
+
+    .cart-food-details{
+        margin-left: 0;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    #order-summary-div{
+        flex: 1;
+    }
+
+    #order-summary{
+        width: 20rem;
+        background: linear-gradient(to bottom right, #05A357, #022413);
+        padding: 1rem;
+        border-radius: 1rem;
+        position: static;
+        margin: auto;
+    }
+}
