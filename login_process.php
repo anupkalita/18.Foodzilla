@@ -15,7 +15,7 @@ if(isset($_POST['username'])){
             header('Location:index.php'); 
         }else{
             echo "<script>alert('invalid credentials');
-                location.href('login.php');
+                location.href = 'login.php';
             </script>";
         }
 
