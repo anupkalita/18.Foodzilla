@@ -106,7 +106,7 @@ document.body.addEventListener('click', function(e){
         let quantity = 1;
         console.log(food_id, customer_name, quantity);
 
-        const xhr = new XMLHttpRequest;
+        const xhr = new XMLHttpRequest();
 
         xhr.open('POST', 'add_to_cart_process.php', true);
 
