@@ -40,7 +40,7 @@ btns.forEach(function(btn){
 // function to fetch food items from database async
 function loadFoodItems(category){
     const xhr = new XMLHttpRequest();
-
+    
     xhr.open('GET', 'home_process.php', true);
 
     xhr.onload = function(){

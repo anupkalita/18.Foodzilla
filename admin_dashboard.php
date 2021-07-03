@@ -32,7 +32,7 @@ if(!$_SESSION['admin']){
             <li><a href="admin_addfood.php"><i class="fas fa-hamburger"></i></i><span>Add Food</span></a></li>
             <li><a href="admin_updatefood.php"><i class="fas fa-hamburger"></i></i><span>Update Food</span></a></li>
             <li><a href="admin_orders.php"><i class="fas fa-list-alt"></i>Orders</span></a></li>
-            <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
+            <li><a href="admin_logout.php"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
         </ul>
     </header>
 
